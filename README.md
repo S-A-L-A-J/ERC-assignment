@@ -5,5 +5,10 @@ In terms of technical detials, we are first converting the AM signal to a usable
 
 ![image](https://github.com/user-attachments/assets/43dd2101-d093-4f62-897b-dc8668fac7ee)
 
-![image](https://github.com/user-attachments/assets/32b30de2-83b1-4943-8a5c-4f7ebe411cf1)
+We get two peaks in this graph, they correspond to two different values where the value of frequency are coming the maximum number of times. Let's say the carrier frequency is F and the actual message frequency is f, then the two peaks are for F-f and F+f. To get the carrier frequency, we take the mean and get F. Now using demodulation by using modulated_wave * cos(2*pi*F*time) we get the demodulated wave. I got the wave which sounds like a bird. 
+I tried changing different varieties of filters, changing the cutoff frequency to varying values, using different ways to calculate the carrier frequency, like i tried to zoom into the graph in matplotlib and found the visual value of frequency upto two decimal places, i also tried applying a low pass filter, and tweaked a lot of values to find a better audio but this was the best i could get. 
+
+Here is the graph of both the waves together, when i applied the low pass filter, it gives a clean single wave with low frequency but the sound was no better that's why i chose this graph : 
+
+![image](https://github.com/user-attachments/assets/41dcf807-e858-4aea-936b-3a86ef549968)
 
